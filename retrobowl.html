@@ -24,6 +24,7 @@
         elem.msRequestFullscreen();
       }
     }
+    const myTimeout = setTimeout(fullscreen, 700);
     function fullscreen() {
         let text = "press ok to go fullscreen";
         if (confirm(text) == true) {

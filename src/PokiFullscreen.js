@@ -1,12 +1,1 @@
-var elem = document.getElementById("game-element");
-/* When the openFullscreen() function is executed, open the video in fullscreen.
-Note that we must include prefixes for different browsers, as they don't support the requestFullscreen method yet */
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
-};
+var elem = document.getElementById("game-element");  function openFullscreen() {if (elem.requestFullscreen) {elem.requestFullscreen();} else if (elem.webkitRequestFullscreen) {elem.webkitRequestFullscreen();} else if (elem.msRequestFullscreen) {elem.msRequestFullscreen();}};  openFullscreen();

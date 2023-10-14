@@ -1,32 +1,107 @@
+<!DOCTYPE html> 
 <html>
-<head>
-<link rel="manifest" href="manifest.json" />
-<!-- ios support -->
-<link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
-<meta name="apple-mobile-web-app-status-bar" content="#db4938" />
-<meta name="theme-color" content="#db4938" />
-<style>body,html,iframe{margin:0;padding:0;height:100%;width:100%;overflow:hidden}.forceIosScrolling{overflow:scroll;-webkit-overflow-scrolling:touch}</style>
-<script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.P0B2vZm_jJk.O/m=gapi_rpc/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_nmCaDbrwZCe_WiNZEgKVKQ-FnSA/cb=gapi.loaded_0?le=scs" async=""></script><script src="https://apis.google.com/js/api.js?checkCookie=1" gapi_processed="true"></script>
-</head>
-<body>
-<iframe id="innerFrame" name="innerFrame" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads" frameborder="0" allowfullscreen="" src="https://jakwhegf.github.io/iuertjklngkkdd/" style="overflow: auto;"></iframe>
-<script>function loadGapi(){var loaderScript=document.createElement('script');loaderScript.setAttribute('src','https://apis.google.com/js/api.js?checkCookie=1');loaderScript.onload=function(){this.onload=function(){};loadGapiClient();};loaderScript.onreadystatechange=function(){if(this.readyState==='complete'){this.onload();}};(document.head||document.body||document.documentElement).appendChild(loaderScript);}function updateInnerFrame(url,enableInteraction,forceIosScrolling){var urlEl=document.createElement('a');urlEl.setAttribute('href',url);if(urlEl.protocol!="https:"&&urlEl.protocol!="http:"){return;}var iframe=document.getElementById('innerFrame');iframe.src=url;iframe.onload=function(){gapi.rpc.call('..','innerFrameLoaded');};if(enableInteraction){if(forceIosScrolling){var iframeParent=iframe.parentElement;iframeParent.classList.add('forceIosScrolling');}else{iframe.style.overflow='auto';}}else{iframe.style.pointerEvents='none';}}function updateInnerIframeCode(userCode,enableInteraction,forceIosScrolling){gapi.rpc.setup('innerFrame');gapi.rpc.call('innerFrame','updateUserHtmlFrame',undefined,userCode,enableInteraction,forceIosScrolling);}function onPostMessage(ev){if(ev.data['magic']!='SHIC'){return;}var type=ev.data['type'];switch(type){case'resize':var height=ev.data['height'];gapi.rpc.call('..','resize',undefined,height);}}function onGapiInitialized(){gapi.rpc.call('..','gapiInitialized');gapi.rpc.register('updateInnerFrame',updateInnerFrame);gapi.rpc.register('updateInnerIframeCode',updateInnerIframeCode);window.addEventListener('message',onPostMessage);}function loadGapiClient(){gapi.load('gapi.rpc',onGapiInitialized);}if(document.readyState=='complete'){loadGapi();}else{self.addEventListener('load',loadGapi);}</script>
-</body>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
-    navigator.serviceWorker
-      .register("/serviceWorker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log("service worker not registered", err))
-  })
-}
-</script>
+  <head>
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+  </head>
+  <body>
+    <h1>Bookmarklets</h1>
+    <h2>Step 1</h2>
+    <hr />
+    <p>Make sure your bookmarks bar is showing, if its not do command+shift+B and it will show</p>
+    <h2>Step 2</h2>
+    <hr />
+    <p>find bookmarklet you want to use</p>
+    <h2>Step 3</h2>
+    <hr />
+    <p>drag button onto bookmarks bar</p>
+    <h2>Step 4</h2>
+    <hr />
+    <p>click bookmark when on tab</p>
+    <div class="wrapper">
+      <div class="left">
+        <p>Required Internet but updates live</p>
+        <a class="bookmark no-highlight" href="javascript:(function()%7Bdocument.body.appendChild(document.createElement('script')).src='https://cybercornvr.github.io/src/PokiFullscreen.js' %7D)();">Poki Fullscreen</a>
+      </div>
+      <div class="right"> 
+        <p>does not require internet to run but does not update</p>
+        <a class="bookmark no-highlight" href="var elem = document.getElementById('game-element');  function openFullscreen() {if (elem.requestFullscreen) {elem.requestFullscreen();} else if (elem.webkitRequestFullscreen) {elem.webkitRequestFullscreen();} else if (elem.msRequestFullscreen) {elem.msRequestFullscreen();}};  openFullscreen();">Poki Fullscreen</a>
+      </div>
+    </div>
+  </body>
+  <style>
+    body {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  }
+  p {
+    color: black;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px white;
+  }
+  h1 {
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+    color: cornflowerblue;
+  }
+  h2 {
+    color: chocolate;
+    font-size: 40px;
+    margin: 5px;
+    text-align: center;
+    font-family:monospace;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+  }
+  .left {
+    width: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+  }
+  .right {
+    width: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    left: 100%;
+  }
+  .bookmark {
+    background: antiquewhite;
+    border: 0.2em solid black;
+    padding: .2em 0.5em;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+  
+  }
+  
+  .no-highlight{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
+  }
+  .side {
+    text-align: left;
+    margin: 1px;
+  }
+  
+  </style>
 </html>

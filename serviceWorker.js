@@ -1,5 +1,10 @@
 const staticRetroBowl = "retro-bowl-site-v1"
 const assets = [
+  "/",
+  "/app/",
+  "/app/app.html",
+  "/app/styles.css",
+  "/app/script.js",
 ]
 
 self.addEventListener("install", installEvent => {

@@ -9,7 +9,7 @@ const assets = [
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticAppe).then(cache => {
+    caches.open(staticApp).then(cache => {
       cache.addAll(assets)
     })
   )

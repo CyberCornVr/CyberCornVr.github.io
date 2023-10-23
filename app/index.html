@@ -1,28 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="./styles.css">
+<script src="./script.js"></script>
 </head>
 <body>
-    <iframe src="https://aniwatch.to" title="aniwatch"></iframe>
+<p>hi there</p>
 </body>
-<style>
-iframe {
-    height: 100%;
-    width:100%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    border: none;
-}
-</style>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
-    navigator.serviceWorker
-      .register("/serviceWorker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log("service worker not registered", err))
-  })
-}
-</script>
 </html>

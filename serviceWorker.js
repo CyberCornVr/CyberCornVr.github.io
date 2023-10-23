@@ -1,4 +1,4 @@
-const staticRetroBowl = "retro-bowl-site-v1"
+const staticApp = "AppCache"
 const assets = [
   "/",
   "/app/",
@@ -9,7 +9,7 @@ const assets = [
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticDevCoffee).then(cache => {
+    caches.open(staticAppe).then(cache => {
       cache.addAll(assets)
     })
   )

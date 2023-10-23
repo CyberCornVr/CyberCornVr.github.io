@@ -1,10 +1,14 @@
 const staticApp = "AppCache"
 const assets = [
   "/",
-  "/app/",
-  "/app/app.html",
-  "/app/styles.css",
-  "/app/script.js",
+  "index.html",
+  "manifest.json",
+  "assets/",
+  "assets/icon.png",
+  "css/",
+  "css/styles.css",
+  "js/",
+  "js/script.js",
 ]
 
 self.addEventListener("install", installEvent => {
